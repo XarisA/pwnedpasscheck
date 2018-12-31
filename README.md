@@ -1,11 +1,11 @@
 # pwnedpasscheck
 
-***pwnedpasscheck*** s for pwned passwords from [haveibeenpwned.com](https://haveibeenpwned.com/API/v2#PwnedPasswords) v2 API by using the [pwnedpasswords](https://github.com/lionheart/pwnedpasswords) library.
+<b><i>pwnedpasscheck</b></i>s for pwned passwords from [haveibeenpwned.com](https://haveibeenpwned.com/API/v2#PwnedPasswords) v2 API by using the [pwnedpasswords](https://github.com/lionheart/pwnedpasswords) library.
 
 How to use:
 ---
 
-```shell
+```
 python pwnedpasscheck.py -h
   
 usage: pwnedpasscheck.py [-h] [-p PASSWORD] [-f FILE]
@@ -15,27 +15,60 @@ optional arguments:
   -p PASSWORD, --password PASSWORD
                         The password you want to test
   -f FILE, --file FILE  Load a file with multiple passwords to check
-  ```
+```
+
+Installation
+---
+
+```bash
+# Download the file
+$ wget https://github.com/XarisA/pwnedpasscheck/archive/master.zip -O pwnedpasscheck.zip
+
+# Extract it and clean up
+$ unzip pwnedpasscheck.zip -d pwnedpasscheck
+$ mv pwnedpasscheck/pwnedpasscheck-master/* pwnedpasscheck && rm -rf pwnedpasscheck/pwnedpasscheck-master && rm pwnedpasscheck.zip
+
+# Make it executable
+$ cd pwnedpasscheck
+$ chmod +x pwnedpasscheck.py
+
+# Run the program
+$ ./pwnedpasscheck.py
+```
+
+
+Examples 
+---
   
-  You can also execute it directly from shell
+#### Option 1: Call the interpreter
   
-  ```shell
-  ./pwnedpasscheck.py
-  ```
-  or with arguments.
+```shell
+python pwnedpasscheck.py
+```
   
-  Examples
-  ---
+```shell
+python pwnedpasscheck.py -p password1
+```
   
-  ```shell
-  ./pwnedpasscheck.py -p password1
-  ```
+```shell
+python pwnedpasscheck.py -f FileWithOnePasswordPerRow
+```
   
-  ```shell
-  ./pwnedpasscheck.py -f FileWithOnePasswordPerRow
-  ```
+#### Option 2: Let the script call the interpreter (linux only)
+
+```shell
+./pwnedpasscheck.py
+```
+
+```shell
+./pwnedpasscheck.py -p password1
+```
   
+```shell
+./pwnedpasscheck.py -f FileWithOnePasswordPerRow
+```
  
+
 Security Note from [lionheart/pwnedpasswords](https://github.com/lionheart/pwnedpasswords)
 ---
 
