@@ -21,6 +21,9 @@ Installation
 ---
 
 ```bash
+# Install pwnedpasswords library
+$ pip install pwnedpasswords
+
 # Download the file
 $ wget https://github.com/XarisA/pwnedpasscheck/archive/master.zip -O pwnedpasscheck.zip
 
@@ -41,32 +44,16 @@ Examples
 ---
   
 #### Option 1: Call the interpreter
-  
-```shell
-python pwnedpasscheck.py
-```
-  
-```shell
-python pwnedpasscheck.py -p password1
-```
-  
-```shell
-python pwnedpasscheck.py -f FileWithOnePasswordPerRow
-```
+
+![Call The interpreter](https://user-images.githubusercontent.com/3985557/50558943-c05a2000-0cfa-11e9-823d-56e55ec08aa1.png)
   
 #### Option 2: Let the script call the interpreter (linux only)
 
-```shell
-./pwnedpasscheck.py
-```
+![Script1](https://user-images.githubusercontent.com/3985557/50558940-bfc18980-0cfa-11e9-84ba-34284e7241bc.png)
 
-```shell
-./pwnedpasscheck.py -p password1
-```
-  
-```shell
-./pwnedpasscheck.py -f FileWithOnePasswordPerRow
-```
+![Script2](https://user-images.githubusercontent.com/3985557/50558941-bfc18980-0cfa-11e9-8005-03450017e3c2.png)
+
+![Script3](https://user-images.githubusercontent.com/3985557/50558942-c05a2000-0cfa-11e9-9509-0eff14123e47.png)
  
 
 Security Note from [lionheart/pwnedpasswords](https://github.com/lionheart/pwnedpasswords)
