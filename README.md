@@ -24,12 +24,14 @@ Installation
 # Install pwnedpasswords library
 $ pip install pwnedpasswords
 
-# Download the file
+# Download the file (without git installed)
 $ wget https://github.com/XarisA/pwnedpasscheck/archive/master.zip -O pwnedpasscheck.zip
-
 # Extract it and clean up
 $ unzip pwnedpasscheck.zip -d pwnedpasscheck
 $ mv pwnedpasscheck/pwnedpasscheck-master/* pwnedpasscheck && rm -rf pwnedpasscheck/pwnedpasscheck-master && rm pwnedpasscheck.zip
+
+# Download the file (with git)
+$ git clone https://github.com/XarisA/pwnedpasscheck.git
 
 # Make it executable
 $ cd pwnedpasscheck
@@ -42,11 +44,11 @@ $ ./pwnedpasscheck.py
 
 Examples 
 ---
-  
+
 #### Option 1: Call the interpreter
 
 ![Call The interpreter](https://user-images.githubusercontent.com/3985557/50558943-c05a2000-0cfa-11e9-823d-56e55ec08aa1.png)
-  
+
 #### Option 2: Let the script call the interpreter (linux only)
 
 ![Script1](https://user-images.githubusercontent.com/3985557/50558940-bfc18980-0cfa-11e9-84ba-34284e7241bc.png)
@@ -54,7 +56,7 @@ Examples
 ![Script2](https://user-images.githubusercontent.com/3985557/50558941-bfc18980-0cfa-11e9-8005-03450017e3c2.png)
 
 ![Script3](https://user-images.githubusercontent.com/3985557/50558942-c05a2000-0cfa-11e9-9509-0eff14123e47.png)
- 
+
 
 Security Note from [lionheart/pwnedpasswords](https://github.com/lionheart/pwnedpasswords)
 ---
